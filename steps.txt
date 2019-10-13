@@ -1,0 +1,26 @@
+Please perform following steps before executing tests:
+
+Note:
+it is advisable to execute this test in pycharm professional or in a environemnt which supports behave BDD
+I have attempted  to write test in behave. but due to some config issue these are not working.
+however "todolist_mock_server\testCases" contains my approach in behave BDD.
+
+
+prerequisite:
+install pycharm
+
+pip install requests
+pip install jsonpath
+#for reporting purpose I am using pytest-html
+pip install pytest-html
+
+To execute these tests in command prompt navigate to
+ "todolist_mock_server\testCases"
+ type "pytest --html=report.html"
+
+it will create a report "report.html" and also print result on console.
+
+if you only want to see the result not the report
+type pytest test_apiRequest.py -v
+
+option [-v] is verbose which is used for detailed description about test cases execution
